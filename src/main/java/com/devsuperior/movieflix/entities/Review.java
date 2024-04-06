@@ -41,6 +41,13 @@ public class Review {
         this.user = user;
     }
 
+    public Review(Review entity) {
+        id = entity.getId();
+        text = entity.getText();
+        movie = entity.getMovie();
+        user = entity.getUser();
+    }
+
     public Long getId() {
         return id;
     }
